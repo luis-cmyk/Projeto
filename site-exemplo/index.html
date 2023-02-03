@@ -5,10 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro site em HTML</title>
+    <style>
+
+.login-container {
+width: 400px;
+margin: 0 auto;
+text-align: center;
+padding: 20px;
+background-color: #f2f2f2;
+border-radius: 10px;
+}
+
+.form-control {
+width: 60%;
+margin: 20px auto;
+display: block;
+}
+
+.btn-primary {
+background-color: blue;
+color: white;
+width: 60%;
+margin: 20px auto;
+display: block;
+padding: 10px;
+border-radius: 10px;
+}
+    </style>
 </head>
 <body>
-    <h1>Olá,Mundo</h1>
-    <hr>
-    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sit illo recusandae molestias, unde minima, dolorem, labore nesciunt obcaecati eum temporibus rem blanditiis quia harum. Asperiores ullam optio perspiciatis repellendus.</P>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
 </body>
 </html>
